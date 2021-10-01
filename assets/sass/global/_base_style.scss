@@ -1,0 +1,20 @@
+@use "../core/variables";
+
+/* 共通部分 */
+html {
+  font-size: 100%;
+}
+
+body {
+  color: rgb(119, 94, 94);
+  font-family: variables.$my-font-family;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
