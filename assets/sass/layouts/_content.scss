@@ -1,0 +1,18 @@
+@use "../core/variables";
+
+// content
+.content__inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 78px;
+  padding-top: 106px;
+  // max-width: variables.$container-width;
+}
+
+.content__inner > .content-media {
+  margin-bottom: 122px;
+}
+
+.content__inner > .content-media:last-child {
+  margin-bottom: 0;
+}

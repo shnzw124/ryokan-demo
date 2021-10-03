@@ -1,0 +1,41 @@
+// content-media
+.content-media {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 7.13542%;
+}
+
+.content-media__img-wrapper {
+  flex: 0 1 54.6875%;
+}
+
+.content-media__img {
+  width: 100%;
+}
+
+.content-media__body {
+  // flex: 1;
+}
+
+.content-media__body > * {
+  margin-bottom: 75px;
+}
+
+.content-media__body > *:last-child {
+  margin-bottom: 0;
+}
+
+.content-media__title {
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+
+.content-media__text {
+  // line-height: 2.0;
+}
+
+.content-media--reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}

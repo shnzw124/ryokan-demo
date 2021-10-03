@@ -1,0 +1,35 @@
+@use "../core/variables";
+
+// detail
+.detail__inner {
+  max-width: variables.$container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 36px;
+  padding-bottom: 150px;
+}
+
+.detail__inner > .breadcrumb {
+  margin-bottom: 98px;
+}
+
+.detail__inner > .detail__text {
+  margin-bottom: 78px;
+}
+
+.detail__content > .horizontal-table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.detail__text {
+  text-align: center;
+}
+
+.detail__content > .media {
+  margin-bottom: 84px;
+}
+
+.detail__content > .media:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,21 @@
+// btn
+.btn {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  display: inline-block;
+  max-width: 100%;
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: .25s;
+  width: 170px;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #000;
+  border-color: transparent;
+  color: #fff;
+}

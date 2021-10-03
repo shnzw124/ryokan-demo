@@ -1,0 +1,29 @@
+// top
+.top {
+  background-size: cover;
+}
+
+.top--room {
+  background-image: url("../img/oheya-top.jpg");
+}
+
+.top--dish {
+  background-image: url("../img/menu-top.jpg");
+}
+
+.top--bath {
+  background-image: url("../img/onsen-top.jpg");
+}
+
+.top__inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 233px;
+  padding-top: 233px;
+}
+
+.top__title {
+  color: #fff;
+  font-size: 2.125rem;
+  text-align: center;
+}

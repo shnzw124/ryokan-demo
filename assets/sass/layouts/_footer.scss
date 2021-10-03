@@ -1,0 +1,74 @@
+@use "../core/variables";
+
+// footer
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__top {
+  background-image: url("/assets/img/bg3.png");
+  background-size: cover;
+  padding-bottom: 61px;
+  padding-top: 64px;
+}
+
+.footer__top > .footer__list {
+  margin-bottom: 96px;
+}
+
+.footer__top > .footer__logo {
+  margin-bottom: 72px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+
+.footer__item {
+  display: inline-block;
+  font-size: 1.125rem;
+  letter-spacing: 18px;
+  text-align: left;
+  writing-mode: vertical-lr;
+}
+
+.footer__list > .footer__item {
+  margin-right: 34px;
+}
+
+.footer__list > .footer__item:last-child {
+  margin-right: 0;
+}
+
+.footer__info {
+  text-align: center;
+}
+
+.footer__info > .footer__info-address {
+  margin-bottom: 23px;
+}
+
+.footer__bottom {
+  background-color: #000;
+}
+
+.footer__bottom > .footer__copyright {
+  padding-bottom: 23px;
+  padding-top: 23px;
+}
+
+.footer__copyright {
+  color: #fff;
+  font-size: .75rem;
+  text-align: center;
+}
+
+@media screen and (max-width: variables.$sp) {
+  .footer {
+    max-width: 90%;
+  }
+}

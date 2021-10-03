@@ -1,0 +1,41 @@
+// horizontal-table
+.horizontal-table {
+  border-bottom: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  padding-bottom: 74px;
+  padding-top: 95.5px;
+}
+
+.horizontal-table__inner {
+  border-bottom: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 880px;
+  width: 100%;
+}
+
+.horizontal-table__title {
+  font-weight: normal;
+  margin-bottom: 51.5px;
+  text-align: center;
+}
+
+.horizontal-table__header {
+  border-bottom: 1px solid #e7e7e7;
+  font-weight: normal;
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.horizontal-table__text {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 15px;
+}
+
+.horizontal-table__row:last-child .horizontal-table__header,
+.horizontal-table__row:last-child .horizontal-table__text {
+  border-bottom-width: 0;
+}

@@ -1,0 +1,26 @@
+@use "../core/variables";
+
+// first-view 
+.fv {
+  background-image: url("../img/mainbg01.jpg");
+  background-size: cover;
+  
+}
+
+.fv__inner {
+  padding-bottom: 431px;
+  padding-top: 362px;
+  max-width: variables.$container-width;
+  // text-align: center;
+  // margin-left: auto;
+  // margin-right: auto;
+}
+
+.fv__title {
+  color: #fff;
+  font-size: 2.125rem;
+  letter-spacing: 16px;
+  text-align: left;
+  writing-mode: vertical-rl;
+  // line-height: 6.0;
+}

@@ -1,0 +1,14 @@
+// breadcrumb
+.breadcrumb__list {
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumb__list > .breadcrumb__item {
+  margin-left: 5px;
+}
+
+.breadcrumb__list > .breadcrumb__item:last-child {
+  margin-left: .2em;
+}

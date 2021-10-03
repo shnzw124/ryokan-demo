@@ -1,0 +1,43 @@
+@use "../core/variables";
+
+// header
+.header {
+  padding: 20px;
+}
+
+.header__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__left {
+  align-items: center;
+  display: flex;
+}
+
+.header__logo {
+  align-items: center;
+  display: flex;
+}
+
+.header__logo-text {
+  margin-left: 15px;
+}
+
+.header__left > .header__logo {
+  margin-right: 120px;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+}
+
+.header__list > .header__item {
+  margin-right: 30px;
+}
+
+.header__list > .header__item:last-child {
+  margin-right: 0;
+}

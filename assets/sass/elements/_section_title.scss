@@ -1,0 +1,16 @@
+// section-title
+.section-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-title > .section-title__img {
+  margin-bottom: 20px;
+}
+
+.section-title__text {
+  font-size: 2.0rem;
+}

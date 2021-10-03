@@ -1,0 +1,14 @@
+@use "../core/variables";
+
+// access
+.access {
+  background-image: url("../img/bg.png");
+}
+
+.access__inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 110px;
+  padding-top: 60px;
+  max-width: variables.$container-width;
+}

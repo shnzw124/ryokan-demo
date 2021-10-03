@@ -1,0 +1,14 @@
+@use "../core/variables";
+
+// about
+.about {
+  background-image: url("../img/bg.png");
+}
+
+.about__inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 64px;
+  padding-top: 120px;
+  max-width: variables.$container-width;
+}
