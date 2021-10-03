@@ -1,0 +1,62 @@
+// .diagonal-media
+.diagonal-media {
+  height: 438px;
+}
+
+.diagonal-media__inner {
+  position: relative;
+}
+
+.diagonal-media__img-wrapper {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.diagonal-media__img {
+  height: 300px;
+  width: 525px;
+}
+
+.diagonal-media__body {
+  background-image: url("../img/bg.png");
+  height: 381px;
+  left: 367px;
+  padding-left: 238px;
+  padding-top: 60px;
+  position: absolute;
+  top: 57px;
+  width: 813px;
+}
+
+.diagonal-media__body > .diagonal-media__title {
+  margin-bottom: 52px;
+}
+
+.diagonal-media__body > .diagonal-media__text {
+  margin-bottom: 52px;
+}
+
+.diagonal-media__title {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.diagonal-media__text {
+  line-height: 2.0;
+}
+
+.diagonal-media__note-text {
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.diagonal-media--reverse .diagonal-media__img-wrapper {
+  left: 654px;
+}
+
+.diagonal-media--reverse .diagonal-media__body {
+  left: 0;
+  padding-left: 60px;
+}

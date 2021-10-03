@@ -206,11 +206,11 @@ img {
   text-align: center;
 }
 
-.detail__content > .media {
+.detail__content > .diagonal-media {
   margin-bottom: 84px;
 }
 
-.detail__content > .media:last-child {
+.detail__content > .diagonal-media:last-child {
   margin-bottom: 0;
 }
 
@@ -254,11 +254,11 @@ img {
   padding-top: 106px;
 }
 
-.content__inner > .content-media {
+.content__inner > .media {
   margin-bottom: 122px;
 }
 
-.content__inner > .content-media:last-child {
+.content__inner > .media:last-child {
   margin-bottom: 0;
 }
 
@@ -388,27 +388,27 @@ img {
   color: #fff;
 }
 
-.media {
+.diagonal-media {
   height: 438px;
 }
 
-.media__inner {
+.diagonal-media__inner {
   position: relative;
 }
 
-.media__img-wrapper {
+.diagonal-media__img-wrapper {
   left: 0;
   position: absolute;
   top: 0;
   z-index: 1;
 }
 
-.media__img {
+.diagonal-media__img {
   height: 300px;
   width: 525px;
 }
 
-.media__body {
+.diagonal-media__body {
   background-image: url("../img/bg.png");
   height: 381px;
   left: 367px;
@@ -419,33 +419,33 @@ img {
   width: 813px;
 }
 
-.media__body > .media__title {
+.diagonal-media__body > .diagonal-media__title {
   margin-bottom: 52px;
 }
 
-.media__body > .media__text {
+.diagonal-media__body > .diagonal-media__text {
   margin-bottom: 52px;
 }
 
-.media__title {
+.diagonal-media__title {
   font-size: 1.5rem;
   font-weight: normal;
 }
 
-.media__text {
+.diagonal-media__text {
   line-height: 2;
 }
 
-.media__note-text {
+.diagonal-media__note-text {
   font-size: 0.875rem;
   line-height: 1.5;
 }
 
-.media--reverse .media__img-wrapper {
+.diagonal-media--reverse .diagonal-media__img-wrapper {
   left: 654px;
 }
 
-.media--reverse .media__body {
+.diagonal-media--reverse .diagonal-media__body {
   left: 0;
   padding-left: 60px;
 }
@@ -491,7 +491,7 @@ img {
   border-bottom-width: 0;
 }
 
-.content-media {
+.media {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -505,30 +505,30 @@ img {
   gap: 7.13542%;
 }
 
-.content-media__img-wrapper {
+.media__img-wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 54.6875%;
           flex: 0 1 54.6875%;
 }
 
-.content-media__img {
+.media__img {
   width: 100%;
 }
 
-.content-media__body > * {
+.media__body > * {
   margin-bottom: 75px;
 }
 
-.content-media__body > *:last-child {
+.media__body > *:last-child {
   margin-bottom: 0;
 }
 
-.content-media__title {
+.media__title {
   font-size: 2.25rem;
   font-weight: normal;
 }
 
-.content-media--reverse {
+.media--reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
