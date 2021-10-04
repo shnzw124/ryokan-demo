@@ -18,8 +18,12 @@
   // flex: 1;
 }
 
-.media__body > * {
-  margin-bottom: 75px;
+.media__body > .media__title {
+  // margin-bottom: 75px;
+}
+
+.media__body > .media__text {
+  // margin-bottom: 75px;
 }
 
 .media__body > *:last-child {

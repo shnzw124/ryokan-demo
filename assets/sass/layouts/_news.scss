@@ -8,3 +8,25 @@
   padding-top: 60px;
   max-width: variables.$container-width;
 }
+
+.news__inner > .section-title {
+  margin-bottom: 46px;
+}
+
+.news__inner > .news__link-list {
+  margin-bottom: 49px;
+}
+
+.news__link-list {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+}
+
+.news__link-item {
+  margin-right: 53px;
+}
+
+.news__link-list > .news__link-item:last-child {
+  margin-right: 0;
+}
