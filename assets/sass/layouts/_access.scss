@@ -12,6 +12,8 @@
   max-width: variables.$container-width;
   padding-bottom: 110px;
   padding-top: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .access__inner > .section-title {
@@ -35,12 +37,12 @@
   justify-content: center;
 }
 
-@media screen and (max-width: variables.$tb) {
-  .access__inner {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
+// @media screen and (max-width: variables.$tb) {
+//   .access__inner {
+//     padding-right: 20px;
+//     padding-left: 20px;
+//   }
+// }
 
 @media screen and (max-width: variables.$sp) {
   .access__inner {

@@ -479,6 +479,8 @@ img {
   margin-right: auto;
   padding-bottom: 144px;
   padding-top: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
   max-width: 1180px;
 }
 
@@ -486,12 +488,6 @@ img {
   margin-bottom: 66px;
 }
 
-@media screen and (max-width: 1024px) {
-  .plan__inner {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
 @media screen and (max-width: 414px) {
   .plan__inner {
     padding-right: 10px;
@@ -503,6 +499,8 @@ img {
   margin-right: auto;
   padding-bottom: 60px;
   padding-top: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
   max-width: 1180px;
 }
 
@@ -555,6 +553,8 @@ img {
   max-width: 1180px;
   padding-bottom: 110px;
   padding-top: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .access__inner > .section-title {
@@ -578,12 +578,6 @@ img {
           justify-content: center;
 }
 
-@media screen and (max-width: 1024px) {
-  .access__inner {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
 @media screen and (max-width: 414px) {
   .access__inner {
     padding-right: 10px;
@@ -896,21 +890,6 @@ img {
 
 @media screen and (max-width: 1024px) {
   .media {
-    gap: 5.13542%;
-  }
-
-  .media__img-wrapper {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 48.6875%;
-            flex: 0 1 48.6875%;
-  }
-
-  .media__title {
-    font-size: 1.75rem;
-  }
-}
-@media screen and (max-width: 414px) {
-  .media {
     position: relative;
     display: block;
     height: 490px;
@@ -919,9 +898,7 @@ img {
   .media__img-wrapper {
     position: absolute;
     top: 0;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    width: 100%;
   }
 
   .media__img {
