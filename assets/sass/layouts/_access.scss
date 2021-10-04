@@ -22,7 +22,33 @@
   margin-bottom: 69px;
 }
 
+.access__inner .media__sub-title {
+  // margin-bottom: 24px;
+}
+
+.access__inner .media__text {
+  margin-bottom: 24px;
+}
+
 .access__map {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: variables.$tb) {
+  .access__inner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: variables.$sp) {
+  .access__inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .access__inner .media__sub-title {
+    margin-bottom: 0;
+  }
 }

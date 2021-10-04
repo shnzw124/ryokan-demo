@@ -14,6 +14,7 @@
 }
 
 .detail__inner > .detail__text {
+  line-height: 2.0;
   margin-bottom: 78px;
 }
 
@@ -32,4 +33,24 @@
 
 .detail__content > .diagonal-media:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: variables.$sp) {
+  .detail__inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .detail__inner > .detail__text {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .detail__content > .diagonal-media {
+    margin-bottom: 20px;
+  }
+  
+  .detail__content > .diagonal-media:last-child {
+    margin-bottom: 0;
+  }
 }

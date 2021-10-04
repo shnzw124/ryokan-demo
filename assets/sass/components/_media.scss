@@ -1,3 +1,5 @@
+@use "../core/variables";
+
 // media
 .media {
   align-items: center;
@@ -14,32 +16,69 @@
   width: 100%;
 }
 
-.media__body {
-  // flex: 1;
-}
-
-.media__body > .media__title {
-  // margin-bottom: 75px;
-}
-
-.media__body > .media__text {
-  // margin-bottom: 75px;
-}
-
-.media__body > *:last-child {
-  margin-bottom: 0;
-}
-
 .media__title {
   font-size: 2.25rem;
   font-weight: normal;
 }
 
 .media__text {
-  // line-height: 2.0;
+  line-height: 2.0;
 }
 
 .media--reverse {
   flex-direction: row-reverse;
   justify-content: flex-start;
+}
+
+@media screen and (max-width: variables.$tb) {
+  .media {
+    gap: 5.13542%;
+  }
+
+  .media__img-wrapper {
+    flex: 0 1 48.6875%;
+  }
+
+  .media__title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: variables.$sp) {
+  .media {
+    position: relative;
+    display: block;
+    height: 490px;
+  }
+
+  .media__img-wrapper {
+    position: absolute;
+    top: 0;
+    flex: 1;
+  }
+
+  .media__img {
+    overflow: hidden;
+    height: 490px;
+    object-fit: cover;
+  }
+
+  .media__body {
+    width: 100%;
+    position: absolute;
+    height: 490px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .media__title {
+    font-size: 1.375rem;
+  }
+
 }

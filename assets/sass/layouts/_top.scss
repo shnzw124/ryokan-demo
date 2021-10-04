@@ -1,18 +1,19 @@
 // top
 .top {
+  background-position: center center;
   background-size: cover;
 }
 
 .top--room {
-  background-image: url("../img/oheya-top.jpg");
+  background-image: url("../img/oheya-header.png");
 }
 
 .top--dish {
-  background-image: url("../img/menu-top.jpg");
+  background-image: url("../img/menu-header.png");
 }
 
 .top--bath {
-  background-image: url("../img/onsen-top.jpg");
+  background-image: url("../img/onsen-header.png");
 }
 
 .top__inner {

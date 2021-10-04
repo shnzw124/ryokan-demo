@@ -4,22 +4,40 @@
 .fv {
   background-image: url("../img/mainbg01.jpg");
   background-size: cover;
+  background-position: center center;
 }
 
 .fv__inner {
   padding-bottom: 431px;
   padding-top: 362px;
   max-width: variables.$container-width;
-  // text-align: center;
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .fv__title {
   color: #fff;
   font-size: 2.125rem;
   letter-spacing: 16px;
+  line-height: 2.5;
   text-align: left;
   writing-mode: vertical-rl;
-  // line-height: 6.0;
+  transform: translateX(-155px);
+}
+
+@media screen and (max-width: variables.$sp) {
+  .fv__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fv__inner {
+    justify-content: center;
+  }
+
+  .fv__title {
+    transform: translateX(0);
+  }
 }

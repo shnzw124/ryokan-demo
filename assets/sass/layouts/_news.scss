@@ -30,3 +30,17 @@
 .news__link-list > .news__link-item:last-child {
   margin-right: 0;
 }
+
+@media screen and (max-width: variables.$tb) {
+  .news__inner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: variables.$sp) {
+  .news__inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

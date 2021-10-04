@@ -3,6 +3,7 @@
 // header
 .header {
   padding: 20px;
+  background: transparent;
 }
 
 .header__inner {
@@ -23,6 +24,7 @@
 
 .header__logo-text {
   margin-left: 15px;
+  font-size: 2.0rem;
 }
 
 .header__left > .header__logo {
@@ -40,4 +42,22 @@
 
 .header__list > .header__item:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: variables.$sp) {
+  .header {
+    padding: 10px;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__left > .header__logo {
+    margin-right: 0;
+  }
+
+  .header__logo-text {
+    font-size: 1.5rem;
+  }
 }

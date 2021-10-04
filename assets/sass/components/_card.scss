@@ -24,8 +24,13 @@
 
 .card__title {
   font-size: 1.25rem;
+  line-height: 1.6;
   font-weight: normal;
   margin-bottom: 36px;
+}
+
+.card__text {
+  line-height: 2.0;
 }
 
 .cards {

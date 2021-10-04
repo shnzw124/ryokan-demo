@@ -23,6 +23,7 @@
 
 .footer__list {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   list-style: none;
   text-align: center;
@@ -31,17 +32,17 @@
 .footer__item {
   display: inline-block;
   font-size: 1.125rem;
-  letter-spacing: 18px;
+  letter-spacing: .875rem;
   text-align: left;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
 }
 
 .footer__list > .footer__item {
-  margin-right: 34px;
+  margin-left: 34px;
 }
 
 .footer__list > .footer__item:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .footer__info {
@@ -65,10 +66,4 @@
   color: #fff;
   font-size: .75rem;
   text-align: center;
-}
-
-@media screen and (max-width: variables.$sp) {
-  .footer {
-    max-width: 90%;
-  }
 }

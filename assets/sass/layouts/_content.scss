@@ -6,7 +6,6 @@
   margin-right: auto;
   padding-bottom: 78px;
   padding-top: 106px;
-  // max-width: variables.$container-width;
 }
 
 .content__inner > .media {
@@ -15,4 +14,44 @@
 
 .content__inner > .media:last-child {
   margin-bottom: 0;
+}
+
+.content__inner .media__title {
+  margin-bottom: 75px;
+}
+
+.content__inner .media__text {
+  margin-bottom: 75px;
+}
+
+.content__inner *:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: variables.$tb) {
+  .content__inner .media__title {
+    margin-bottom: 30px;
+  }
+  
+  .content__inner .media__text {
+    margin-bottom: 30px;
+  }
+  
+  .content__inner *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: variables.$sp) {
+  .content__inner > .media {
+    margin-bottom: 60px;
+  }
+
+  .content__inner .media__title {
+    margin-bottom: 50px;
+  }
+  
+  .content__inner .media__text {
+    margin-bottom: 50px;
+  }
 }
