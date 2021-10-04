@@ -44,6 +44,11 @@
   margin-right: 0;
 }
 
+.header__right {
+  align-items: center;
+  display: flex;
+}
+
 @media screen and (max-width: variables.$sp) {
   .header {
     padding: 10px;
@@ -59,5 +64,6 @@
 
   .header__logo-text {
     font-size: 1.5rem;
+    margin-left: 5px;
   }
 }

@@ -1,3 +1,5 @@
+@use "../core/variables";
+
 // before-icon-btn
 .before-icon-btn {
   background-color: #978f10;
@@ -5,7 +7,10 @@
   color: #fff;
   display: inline-block;
   max-width: 100%;
-  padding: 16px 37px;
+  padding-bottom: 16px;
+  padding-left: 2.3125em;
+  padding-right: 2.3125em;
+  padding-top: 16px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -29,4 +34,13 @@
 
 .before-icon-btn--calendar::before {
   content: "\f073";
+}
+
+@media screen and (max-width: variables.$sp) {
+  .before-icon-btn {
+    max-width: 100%;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+    width: 130px;
+  }
 }
