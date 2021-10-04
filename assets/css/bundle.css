@@ -667,7 +667,7 @@ img {
 }
 
 .btn {
-  background-color: #fff;
+  background: transparent;
   border: 1px solid #000;
   color: #000;
   display: inline-block;
@@ -701,17 +701,17 @@ img {
   position: absolute;
   top: 0;
   z-index: 1;
+  width: 525px;
 }
 
 .diagonal-media__img {
-  height: 300px;
-  width: 525px;
+  width: 100%;
 }
 
 .diagonal-media__body {
   background-image: url("../img/bg.png");
   height: 381px;
-  left: 367px;
+  right: 0;
   padding-left: 238px;
   padding-top: 60px;
   position: absolute;
@@ -742,28 +742,33 @@ img {
 }
 
 .diagonal-media--reverse .diagonal-media__img-wrapper {
-  left: 654px;
+  left: unset;
+  right: 0;
 }
 
 .diagonal-media--reverse .diagonal-media__body {
+  right: unset;
   left: 0;
   padding-left: 60px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1024px) {
   .diagonal-media {
     position: relative;
     display: block;
+    width: 100%;
     height: 414px;
   }
 
   .diagonal-media__img-wrapper {
     position: absolute;
     top: 0;
+    width: 100%;
   }
 
   .diagonal-media__img {
     height: 414px;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     z-index: 1;
@@ -771,6 +776,7 @@ img {
 
   .diagonal-media__body {
     position: absolute;
+    width: 100%;
     background: transparent;
     top: 40px;
     left: 0;
@@ -941,6 +947,11 @@ img {
 
   .media__title {
     font-size: 1.375rem;
+  }
+
+  .media__btn {
+    color: #fff;
+    border-color: #fff;
   }
 }
 .card {
