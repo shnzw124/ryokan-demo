@@ -16,21 +16,33 @@
   
 }
 
-.news__inner > .news__link-list {
+.news__inner > .news__tabs {
   margin-bottom: 49px;
 }
 
-.news__link-list {
+.news__tabs {
   list-style: none;
   justify-content: center;
   display: flex;
 }
 
-.news__link-item {
+.news__tabs-item {
   margin-right: 53px;
 }
 
-.news__link-list > .news__link-item:last-child {
+.news__tabs-link.active {
+  text-decoration: underline;
+}
+
+.news__content {
+  display: none;
+}
+
+.news__content.show {
+  display: block;
+}
+
+.news__tabs > .news__tabs-item:last-child {
   margin-right: 0;
 }
 
