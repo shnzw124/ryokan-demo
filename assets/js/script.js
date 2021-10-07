@@ -34,6 +34,17 @@ $(function(){
     allowTouchMove: false,//マウスでのスワイプを禁止
   });
 
+  // ヘッダー表示
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      // $('header').fadeIn();
+      $('header').removeClass("hidden");
+    } else {
+      // $('header').fadeOut();
+      $('header').addClass("hidden");
+    }
+  });
+
   // AOS.js
   AOS.init({
     duration: 3000
