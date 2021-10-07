@@ -2,42 +2,100 @@
 
 // first-view 
 .fv {
-  background-image: url("../img/mainbg01.jpg");
-  background-size: cover;
-  background-position: center center;
+  // background-image: url("../img/mainbg01.jpg");
+  // background-size: cover;
+  // background-position: center center;
 }
 
 .fv__inner {
-  padding-bottom: 431px;
-  padding-top: 362px;
-  max-width: variables.$container-width;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: flex-end;
+  // padding-bottom: 431px;
+  // padding-top: 362px;
+  // max-width: variables.$container-width;
+  // margin-left: auto;
+  // margin-right: auto;
+  // display: flex;
+  // justify-content: flex-end;
 }
 
 .fv__title {
+  // color: #fff;
+  // font-size: 2.125rem;
+  // letter-spacing: 16px;
+  // line-height: 2.5;
+  // text-align: left;
+  // writing-mode: vertical-rl;
+  // transform: translateX(-155px);
+}
+
+@-webkit-keyframes zoomUp {
+  0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+  100% {
+      -webkit-transform: scale(1.15);
+      transform: scale(1.15);
+  }
+}
+
+@keyframes zoomUp { /* 1.15倍させる指定 */
+  0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+  100% {
+      -webkit-transform: scale(1.15);
+      transform: scale(1.15);
+  }
+}
+
+.swiper-slide {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img { 
+    -webkit-animation: zoomUp 12s linear 0s;
+    animation: zoomUp 12s linear 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.slide-img {
+    background-size: cover; 
+    background-position: center center;
+    height: 1080px;
+}
+
+.slide-text {
+  position: absolute;
+  z-index: 10;
   color: #fff;
+  width: 100%;
+  top: 25%;
+  right: 25%;
+  font-weight: bold;
   font-size: 2.125rem;
   letter-spacing: 16px;
   line-height: 2.5;
   text-align: left;
   writing-mode: vertical-rl;
-  transform: translateX(-155px);
 }
 
 @media screen and (max-width: variables.$sp) {
   .fv__title {
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 
   .fv__inner {
-    justify-content: center;
+    // justify-content: center;
   }
 
   .fv__title {
-    transform: translateX(0);
+    // transform: translateX(0);
   }
 }

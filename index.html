@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/bundle.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
   </head>
 
   <body>
@@ -60,12 +61,32 @@
     </header><!-- /.header -->
 
     <!-- FIRST VIEW -->
-    <section class="fv">
-      <div class="fv__inner">
-        <h2 class="fv__title" data-aos="fade-up">
-          頑張る人の <br>
-          頑張らない時間
-        </h2>
+    <section class="fv swiper-container">
+      <div class="fv__inner swiper-wrapper">
+        <!-- 背景画像１ -->
+        <div class="fv__slide swiper-slide">
+          <div class="fv__img slide-img" style="background-image: url('./assets/img/mainbg01.jpg');"></div>
+          <h2 class="fv__title slide-text" data-aos="fade-up">
+            頑張る人の <br>
+            頑張らない時間
+          </h2>
+        </div>
+        <!-- 背景画像２ -->
+        <div class="fv__slide swiper-slide">
+          <div class="fv__img slide-img" style="background-image: url('./assets/img/mainbg02.jpg');"></div>
+          <h2 class="fv__title slide-text" data-aos="fade-up">
+            頑張る人の <br>
+            頑張らない時間
+          </h2>
+        </div>
+        <!-- 背景画像３ -->
+        <div class="fv__slide swiper-slide">
+          <div class="fv__img slide-img" style="background-image: url('./assets/img/mainbg03.jpg');"></div>
+          <h2 class="fv__title slide-text" data-aos="fade-up">
+            頑張る人の <br>
+            頑張らない時間
+          </h2>
+        </div>
       </div><!-- /.fv__inner --> 
     </section><!-- /.fv --> 
 
@@ -462,5 +483,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
     <script src="./assets/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
   </body>
 </html>
