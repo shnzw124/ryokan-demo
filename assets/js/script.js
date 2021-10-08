@@ -51,8 +51,8 @@ $(function(){
     $('.modal').removeClass("hidden");
     $('body').css({
       // 背景を固定
-      'overflow-y': 'hidden',
-      'position': 'fixed'
+      'overflow': 'hidden',
+      // 'position': 'fixed'
     })
   });
   $('.modal__close-btn , .modal__bg').click(function(){
@@ -60,8 +60,8 @@ $(function(){
     $('.modal').addClass("hidden");
     $('body').css({
       // 背景固定を解除
-      'overflow-y': 'unset',
-      'position': 'static'
+      'overflow': 'unset',
+      // 'position': 'static'
     })
   });
 
