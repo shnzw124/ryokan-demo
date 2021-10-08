@@ -11,6 +11,8 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   </head>
 
   <body>
@@ -60,6 +62,45 @@
       </div><!-- /.header__inner -->
     </header><!-- /.header -->
 
+    <!-- MODAL -->
+    <section class="modal hidden">
+      <div class="modal__bg"></div>
+      <div class="modal__wrapper">
+        <div class="modal__inner">
+          <p class="modal__title">宿泊予約</p>
+          <form action="#" class="modal__form">
+            <div class="modal__area-name">
+              <label for="name" class="modal__label-name">お名前</label>
+              <input id="name" type="text" class="modal__input-name" placeholder=" 例：石井正悟">
+            </div>
+            <div class="modal__area-email">
+              <label for="email" class="modal__label-email">メールアドレス</label>
+              <input id="email" type="text" class="modal__input-email" placeholder="例：Example@example.com">
+            </div>
+            <div class="modal__area-plan">
+              <label for="plan" class="modal__label-plan">ご希望プラン<span>（空いているプランのみ表示されます）</span></label>
+              <select id="plan" name="plan" class="modal__select-plan">
+                <option value="unselected">プランを選択してください</option>
+                <option value="plan1">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                <option value="plan2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                <option value="plan3">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+              </select>
+            </div>
+            <div class="modal__area-date">
+              <label for="date" class="modal__label-date">日時選択</label>
+              <input id="date" type="text" class="modal__select-date" placeholder="日時を選択してください" data-mindate="today">
+            </div>
+            <div class="modal__area-btn">
+              <input type="submit" class="modal__submit-btn btn" value="送信する">
+            </div>
+          </form><!-- /.modal__form -->
+          <div class="modal__close-btn">
+            <i class="material-icons">close</i>
+          </div>
+        </div><!-- /.modal__inner -->
+      </div><!-- /.modal__wrapper -->
+    </section><!-- /.modal -->
+    
     <!-- FIRST VIEW -->
     <section class="fv swiper-container">
       <div class="fv__inner swiper-wrapper">
@@ -484,5 +525,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
   </body>
 </html>

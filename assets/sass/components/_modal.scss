@@ -1,0 +1,89 @@
+@use "../core/variables";
+
+// modal
+.modal {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; /*サイトによってここの数値は調整 */
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal__bg {
+  background-color: rgba(255,255,255,.80);
+  height: 100%;
+  width: 100%;
+}
+
+.modal__wrapper {
+  background-color: #fff;
+  border: 1px solid #707070;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.modal__inner {
+  padding: 29px 60px 90px;
+}
+
+.modal__inner > .modal__title {
+  margin-bottom: 35.5px;
+}
+
+.modal__form > .modal__area-btn {
+  margin-top: 50px;
+}
+
+.modal__title {
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 1.25rem;
+  padding-bottom: 29.5px;
+  text-align: center;
+}
+
+.modal__area-name,
+.modal__area-email,
+.modal__area-plan,
+.modal__area-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__area-btn {
+  text-align: center;
+}
+
+.modal__label-name,
+.modal__label-email,
+.modal__label-plan,
+.modal__label-date {
+  margin-bottom: 14px;
+}
+
+.modal__label-plan span {
+  font-size: .875rem;
+}
+
+.modal__input-name,
+.modal__input-email,
+.modal__select-plan,
+.modal__select-date {
+  border: 1px solid #e7e7e7;
+  height: 2.0rem;
+  margin-bottom: 14px;
+}
+
+.modal__close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 22px;
+  top: 20px;
+}

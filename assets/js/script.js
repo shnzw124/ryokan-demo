@@ -45,6 +45,34 @@ $(function(){
     }
   });
 
+  // モーダル
+  $('.header__btn').click(function(){
+    $('.modal').fadeIn();
+    $('.modal').removeClass("hidden");
+    $('body').css({
+      // 背景を固定
+      'overflow-y': 'hidden',
+      'position': 'fixed'
+    })
+  });
+  $('.modal__close-btn , .modal__bg').click(function(){
+    $('.modal').fadeOut();
+    $('.modal').addClass("hidden");
+    $('body').css({
+      // 背景固定を解除
+      'overflow-y': 'unset',
+      'position': 'static'
+    })
+  });
+
+  // flatpickrの初期化
+  $('#date').flatpickr({
+    altInput: true,
+    minDate: "today",
+    mode: "range",
+    locale: "ja"
+  });
+
   // AOS.js
   AOS.init({
     duration: 3000
