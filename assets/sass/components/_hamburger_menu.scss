@@ -35,6 +35,10 @@
   bottom: 10px;
 }
 
+.burger__icon.close .burger__bar {
+  background-color: #fff;
+}
+
 .burger__icon.close .burger__bar-top {
   transform: translate(-50%, 10px) rotate(45deg);
   transition: transform .3s;

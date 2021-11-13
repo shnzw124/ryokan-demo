@@ -87,3 +87,29 @@
   right: 22px;
   top: 20px;
 }
+
+@media screen and (max-width: variables.$sp) {
+  .modal__wrapper {
+    bottom: 0;
+    height: 100%;
+    top: unset;
+    transform: translate(-50%,0);
+    width: 100%;
+  }
+
+  .modal__inner {
+    // padding: 20px 10px;
+  }
+
+  .modal__inner > .modal__title {
+    // margin-bottom: 15px;
+  }
+
+  .modal__title {
+    // padding-bottom: 15px;
+  }
+
+  .modal__form > .modal__area-btn {
+    // margin-top: 14px;
+  }
+}

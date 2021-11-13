@@ -386,6 +386,7 @@ img {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+  text-orientation: upright;
   line-height: 2.375;
   padding-top: 85px;
   letter-spacing: 0.375rem;
@@ -1173,6 +1174,10 @@ img {
   bottom: 10px;
 }
 
+.burger__icon.close .burger__bar {
+  background-color: #fff;
+}
+
 .burger__icon.close .burger__bar-top {
   -webkit-transform: translate(-50%, 10px) rotate(45deg);
           transform: translate(-50%, 10px) rotate(45deg);
@@ -1331,5 +1336,16 @@ img {
   position: absolute;
   right: 22px;
   top: 20px;
+}
+
+@media screen and (max-width: 414px) {
+  .modal__wrapper {
+    bottom: 0;
+    height: 100%;
+    top: unset;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=bundle.css.map */
